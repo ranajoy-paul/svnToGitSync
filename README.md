@@ -26,11 +26,13 @@ This staging(intermediate) linux box is used to clone SVN repo from a particular
 IBM DevOps box(scrbiasdkcph871.crb.apmoller.net) has been used as staging box for this purpose
 SVN repo & branch detail for DrayWatch which has been used is as given below :
 svn://10.255.217.45/draywatch/branches/DRW_IaaS_Linux_Migration
+(The above link will not open outside client network)
 
 Jenkins Job Details
 =========================
 The Jenkins job is created in Jenkins Master box for DrayWatch project as given below
 http://scrbjendk007258.crb.apmoller.net:10001/view/draywatch/
+(The above link will not open outside client network)
 
 The Job is using a script to connect to required Git repo and sync with DrayWatch SVN repo. Job is auto      
 scheduled to run every morning during Monday to Friday. This will ensure all SVN changes will flow back to   
