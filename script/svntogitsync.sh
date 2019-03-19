@@ -1,5 +1,5 @@
 # Script for MyTruck project. Similar script exists for DrayWatch project with corresponding SVN & GIT repo
-cd /devopstools/svntogitsync/mytruck/GitFromSvn
+cd /devopstools/svntogitsync/mytruck
 
 # Preparing an author file
 svn checkout svn://scrbsoadk001287.crb.apmoller.net/mytruck/APP-2017_MYTRUCK/branches/MyTruck_Devops MyTruckSvnRepo
@@ -11,6 +11,8 @@ chmod -R 755 authors.txt
 # Cloning from SVN into GIT For mytruck from SVN branch /Migration which will create master & Codebase branches :
 
 git svn clone --branches=/branches/MyTruck_Devops --authors-file=authors.txt svn://scrbsoadk001287.crb.apmoller.net/mytruck/APP-2017_MYTRUCK GitFromSvn
+
+cd /devopstools/svntogitsync/mytruck/GitFromSvn
 
 # Then check branch created in GIT, i.e. master etc . 
 git checkout -b featureSyncFromSvn/MyTruck_Devops  remotes/origin/Codebase
